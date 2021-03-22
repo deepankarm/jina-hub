@@ -5,6 +5,6 @@ updates:
     schedule:
       interval: "daily"
     allow:
-    - dependency-name: "jina"
-      dependency-type: "direct"
+      - dependency-name: "jina"
+        dependency-type: "direct"
     open-pull-requests-limit: 100
