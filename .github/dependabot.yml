@@ -6,7 +6,7 @@
 version: 2
 updates:
   - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/classfiers/*/*" # Location of package manifests
+    directory: "/segmenters/image/FiveImageCropper" # Location of package manifests
     schedule:
       interval: "daily"
     allow:
@@ -14,7 +14,255 @@ updates:
         dependency-type: "direct"
   
   - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/encoders/*/*" # Location of package manifests
+    directory: "/segmenters/image/RandomImageCropper" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/image/SlidingWindowImageCropper" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/image/TorchObjectDetectionSegmenter" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/audio/SlidingWindowAudioSlicer" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+  
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/audio/AudioSlicer" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+  
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/nlp/PDFExtractorSegmenter" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/nlp/NLTKSentencizer" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/nlp/JiebaSegmenter" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/nlp/DeepSegmenter" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/nlp/Sentencizer" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/nlp/SlidingWindowSegmenter" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/segmenters/nlp/SpacySentencizer" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/classifiers/image/CLIPZeroShotClassifier" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/classifiers/nlp/ZeroShotTFClassifier" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/numeric/FeatureAgglomerationEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/numeric/UMAPEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip"
+    directory: "/encoders/numeric/FastICAEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip"
+    directory: "/encoders/numeric/TSNEEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip"
+    directory: "/encoders/numeric/CompressionVaeEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/numeric/IncrementalPCAEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip"
+    directory: "/encoders/numeric/RandomGaussianEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/multimodal/TirgMultimodalEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip"
+    directory: "/encoders/image/CustomImageTorchEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip"
+    directory: "/encoders/image/ImageKerasEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/image/BigTransferEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/image/ImageOnnxEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/image/ImageTorchEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/image/ImagePaddlehubEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/image/CustomKerasImageEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/image/CLIPImageEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+
+  - package-ecosystem: "pip"
+    directory: "/encoders/image/VSEImageEncoder"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jina"
+        dependency-type: "direct"
+        
+  - package-ecosystem: "pip"
+    directory: "/encoders/image/TirgImageEncoder"
     schedule:
       interval: "daily"
     allow:
