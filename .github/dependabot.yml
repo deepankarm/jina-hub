@@ -1,270 +1,506 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
-
 version: 2
 updates:
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/image/FiveImageCropper" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-  
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/image/RandomImageCropper" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/image/SlidingWindowImageCropper" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/image/TorchObjectDetectionSegmenter" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/audio/SlidingWindowAudioSlicer" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-  
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/audio/AudioSlicer" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-  
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/nlp/PDFExtractorSegmenter" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/nlp/NLTKSentencizer" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/nlp/JiebaSegmenter" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/nlp/DeepSegmenter" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/nlp/Sentencizer" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/nlp/SlidingWindowSegmenter" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/segmenters/nlp/SpacySentencizer" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/classifiers/image/CLIPZeroShotClassifier" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/classifiers/nlp/ZeroShotTFClassifier" # Location of package manifests
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/numeric/FeatureAgglomerationEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/numeric/UMAPEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip"
-    directory: "/encoders/numeric/FastICAEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip"
-    directory: "/encoders/numeric/TSNEEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip"
-    directory: "/encoders/numeric/CompressionVaeEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/numeric/IncrementalPCAEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip"
-    directory: "/encoders/numeric/RandomGaussianEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/multimodal/TirgMultimodalEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip"
-    directory: "/encoders/image/CustomImageTorchEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip"
-    directory: "/encoders/image/ImageKerasEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/image/BigTransferEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/image/ImageOnnxEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/image/ImageTorchEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/image/ImagePaddlehubEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/image/CustomKerasImageEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/image/CLIPImageEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-
-  - package-ecosystem: "pip"
-    directory: "/encoders/image/VSEImageEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
-        
-  - package-ecosystem: "pip"
-    directory: "/encoders/image/TirgImageEncoder"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/image/FiveImageCropper
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/image/RandomImageCropper
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/image/SlidingWindowImageCropper
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/image/TorchObjectDetectionSegmenter
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/audio/SlidingWindowAudioSlicer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/audio/AudioSlicer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/nlp/PDFExtractorSegmenter
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/nlp/NLTKSentencizer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/nlp/JiebaSegmenter
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/nlp/JiebaSegmenter/tests
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/nlp/DeepSegmenter
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: segmenters/nlp/SpacySentencizer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: classifiers/nlp/ZeroShotTFClassifier
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/numeric/FeatureAgglomerationEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/numeric/UMAPEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/numeric/FastICAEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/numeric/RandomSparseEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/numeric/TSNEEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/numeric/CompressionVaeEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/numeric/IncrementalPCAEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/numeric/RandomGaussianEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/multimodal/TirgMultimodalEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/image/CustomImageTorchEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/image/ImageKerasEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/image/BigTransferEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/image/ImageOnnxEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/image/ImageTorchEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/image/ImagePaddlehubEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/image/CustomKerasImageEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/image/VSEImageEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/image/TirgImageEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/video/VideoTorchEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/video/VideoPaddleEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/audio/ChromaPitchEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/audio/MFCCTimbreEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/audio/Wav2VecSpeechEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/nlp/TransformerTFEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/nlp/FlairTextEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/nlp/UniversalSentenceEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/nlp/TransformerTorchEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/nlp/LaserEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/nlp/FarmTextEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/nlp/VSETextEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: encoders/nlp/TextPaddlehubEncoder
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/image/ImageReader
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/image/ImageCropper
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/image/AlbumentationsCrafter
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/image/ImageResizer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/image/ImageFlipper
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/image/ImageNormalizer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/image/CenterImageCropper
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/audio/AudioMonophoner
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/audio/AudioNormalizer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/audio/AudioReader
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: crafters/nlp/TikaExtractor
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: evaluators/text/EditDistanceEvaluator
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: evaluators/text/BleuEvaluator
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: evaluators/text/GleuEvaluator
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: evaluators/text/RougeEvaluator
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/vector/MilvusIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/vector/FaissIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/vector/SptagIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/vector/AnnoyIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/vector/NGTIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/vector/NmsLibIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/vector/ScannIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/vector/ZarrIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/keyvalue/RedisDBIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/keyvalue/LevelDBIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: indexers/keyvalue/MongoDBIndexer
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: rankers/LightGBMRanker
+- package-ecosystem: pip
+  schedule:
+    interval: daily
+  allow:
+  - dependency-name: jina
+    dependency-type: direct
+  directory: rankers/LevenshteinRanker
