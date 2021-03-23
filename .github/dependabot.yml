@@ -9,7 +9,7 @@ updates:
         dependency-type: "direct"
     open-pull-requests-limit: 10
     
- - package-ecosystem: "docker"
+  - package-ecosystem: "docker"
     directory: "/encoders/audio"
     schedule:
       interval: "daily"
