@@ -10,7 +10,7 @@ updates:
     open-pull-requests-limit: 10
     
   - package-ecosystem: "docker"
-    directory: "/encoders/audio"
+    directory: "/encoders/audio/ChromaPitchEncoder"
     schedule:
       interval: "daily"
     allow:
