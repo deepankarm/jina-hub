@@ -13,9 +13,6 @@ updates:
     directory: "/encoders/audio/ChromaPitchEncoder"
     schedule:
       interval: "daily"
-    allow:
-      - dependency-name: "jina"
-        dependency-type: "direct"
     open-pull-requests-limit: 10
 
   - package-ecosystem: "pip"
