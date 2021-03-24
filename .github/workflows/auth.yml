@@ -1,4 +1,4 @@
-name: test
+name: auth
 
 on: [workflow_dispatch]
 
@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: gh-auth-check
         run: |
-          curl --location --request GET 'https://api.github.com/user' --header "Authorization: token ${{ github.token }}"
+          curl --location --request GET 'https://api.github.com' --header "Authorization: token ${{ github.token }}"
       
