@@ -1,0 +1,12 @@
+name: test
+
+on: [workflow_dispatch]
+
+jobs:
+  gh-auth:
+    runs-on: ubuntu-latest
+    steps:
+      - name: gh-auth-check
+        run: |
+          curl --location --request GET 'https://api.github.com/user' --header "Authorization: token ${{ github.token }}"
+      
