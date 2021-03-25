@@ -35,7 +35,7 @@ jobs:
           echo "::set-output name=is_changed::${is_changed}"
       - name: Jina Hub Image Builder
         if: steps.executor-changed.outputs.is_changed == 1
-        uses: jina-ai/action-hub-builder@master
+        uses: jina-ai/action-hub-builder@feat-dependabot
         with:
           # push is true only for PRs raised by jina-bot
           push: ${{github.actor == 'jina-bot'}}
