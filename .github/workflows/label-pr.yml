@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: codelytv/pr-size-labeler@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.JINA_DEV_BOT }}
+          GITHUB_TOKEN: ${{ secrets.MY_JINAHUB_TOKEN }}
           xs_max_size: '10'
           s_max_size: '100'
           m_max_size: '500'
@@ -17,4 +17,4 @@ jobs:
           fail_if_xl: 'false'
       - uses: actions/labeler@v2
         with:
-          repo-token: "${{ secrets.JINA_DEV_BOT }}"
+          repo-token: "${{ secrets.MY_JINAHUB_TOKEN }}"
