@@ -1,4 +1,4 @@
-FROM jinaai/jina:1.0.15
+FROM jinaai/jina:3.0.4
 
 COPY . /workspace
 WORKDIR /workspace
